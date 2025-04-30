@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./badminton-stats-tracker-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./badminton-stats-tracker-backend/.env
+    restart: unless-stopped
+
+  frontend:
+    build: ./badminton-stats-tracker-frontend
+    ports:
+      - "3000:80"  # Map container port 80 (nginx) to host 3000
+    depends_on:
+      - backend
+    restart: unless-stopped

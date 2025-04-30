@@ -1,0 +1,6 @@
+[submodule "badminton-stats-tracker-backend"]
+	path = badminton-stats-tracker-backend
+	url = .\\badminton-stats-tracker-backend\\
+[submodule "badminton-stats-tracker-frontend"]
+	path = badminton-stats-tracker-frontend
+	url = .\\badminton-stats-tracker-frontend\\
