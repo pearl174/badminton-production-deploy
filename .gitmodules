@@ -1,6 +1,6 @@
 [submodule "badminton-stats-tracker-backend"]
 	path = badminton-stats-tracker-backend
-	url = .\\badminton-stats-tracker-backend\\
+	url = git@github.com:pearl174/badminton-stats-tracker-backend.git
 [submodule "badminton-stats-tracker-frontend"]
 	path = badminton-stats-tracker-frontend
-	url = .\\badminton-stats-tracker-frontend\\
+	url = git@github.com:pearl174/badminton-stats-tracker-frontend.git
