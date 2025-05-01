@@ -12,7 +12,9 @@ services:
   frontend:
     build: ./badminton-stats-tracker-frontend
     ports:
-      - "3000:80"  # Map container port 80 (nginx) to host 3000
+      - "3000:80"  # Serve frontend at http://your-ec2-ip:3000
+    env_file:
+      - ./badminton-stats-tracker-frontend/.env
     depends_on:
       - backend
     restart: unless-stopped
